@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+		<ul>
+			<li ><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">about us</a></li>
+			<li><a href="contactus.html">Contact us</a></li>
+			<li class="current_page_item"><a href="help.html">help</a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div><br><br><br>
+	<h1>Number Guessing Game</h1>
+	<p>This game is played by two players on one device. Each player will input their own secret number in two input fields. There are also two tables, one for Player 1 and one for Player 2.</p>
+	<p>In each table, there are three columns:</p>
+	<ul>
+		<li>Guess: The input for the player</li>
+		<li>Positions Got: The number of positions that match the secret number</li>
+		<li>Numbers Got: The number of numbers that match the secret number</li>
+	</ul>
+	<p>When both players have made their guesses, the tables will be populated with the data. The game is won when both the Positions Got and Numbers Got columns are 4.</p>
+
+	<h2>Example 1:</h2>
+	<p>If Player 1's secret number is 1234 and Player 2 guesses 2134, then all the numbers match but 2 and 1 got their place changed. So, the Positions Got will be 2 and the Numbers Got will be 4.</p>
+
+	<table>
+		<tr>
+			<th>Player 1</th>
+			<th>Player 2</th>
+		</tr>
+		<tr>
+			<td>1234</td>
+			<td>2134</td>
+		</tr>
+		<tr>
+			<td>Guess</td>
+			<td>2134</td>
+		</tr>
+		<tr>
+			<td>Positions Got</td>
+			<td>2</td>
+		</tr>
+		<tr>
+			<td>Numbers Got</td>
+			<td>4</td>
+		</tr>
+	</table>
+
+	<h2>Example 2:</h2>
+	<p>If Player 2's secret number is 4680 and Player 1 guesses 6134, then two numbers (4, 6) match but no position is correct. So, the Positions Got will be 0 and the Numbers Got will be 2.</p>
+
+	<table>
+		<tr>
+			<th>Player 1</th>
+			<th>Player 2</th>
+		</tr>
+		<tr>
+			<td>6134</td>
+			<td>4680</td>
+		</tr>
+		<tr>
+			<td>Guess</td>
+			<td>6134</td>
+		</tr>
+		<tr>
+			<td>Positions Got</td>
+			<td>0</td>
+		</tr>
+		<tr>
+			<td>Numbers Got</td>
+			<td>2</td>
+		</tr>
+	</table>
+    <div id="footer">
+        <p>&copy; Untitled. All rights reserved. </a> made by Naol <a href="https://t.me/akapositive">Naol</a></p>
+    </div>
+
+</body>
+</html>

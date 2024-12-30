@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="aboutus.html">about us</a></li>
+			<li><a href="contactus.html">Contact us</a></li>
+			<li><a href="help.html">help</a></li>
+			<li><a href="#"></a></li>
+		</ul>
+	</div><br><br><br>
+    <div class="container">
+        <section class="player-section player1">
+            <h2>Player 1</h2>
+            <input type="password" id="player1-secret" placeholder="Enter your secret number">
+            <input type="number" id="player1-guess" placeholder="Guess Player 2's number">
+            <button id="player1-submit">Submit Guess</button>
+            <table class="guess-table">
+                <thead>
+                    <tr>
+                        <th>Guess</th>
+                        <th>Positions Got</th>
+                        <th>Numbers Got</th>
+                    </tr>
+                </thead>
+                <tbody id="player1-guesses">
+                </tbody>
+            </table>
+        </section>
+        <section class="player-section player2">
+            <h2>Player 2</h2>
+            <input type="password" id="player2-secret" placeholder="Enter your secret number">
+            <input type="number" id="player2-guess" placeholder="Guess Player 1's number">
+            <button id="player2-submit">Submit Guess</button>
+            <table class="guess-table">
+                <thead>
+                    <tr>
+                        <th>Guess</th>
+                        <th>Positions Got</th>
+                        <th>Numbers Got</th>
+                    </tr>
+                </thead>
+                <tbody id="player2-guesses">
+                </tbody>
+            </table>
+        </section>
+    </div><br><br>
+    <button id="restart" onclick="restartGame()">Restart</button>
+    <h1 style="text-align: center; font-size: large;">IF YOU ARE ON PHONE PLEASE ROTATE YOUR PHONE</h1><br><br><br><br><br>
+    <a href="1-player.html"><button>1-player</button></a><br><br>
+    <div id="footer">
+        <p>&copy; Untitled. All rights reserved. </a> made by Naol <a href="https://t.me/akapositive">Naol</a></p>
+    </div>
+    
+</div>
+    <div id="overlay" class="hidden">
+        <div id="winner-popup" class="popup hidden">
+            <h2 id="winner-text"></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
